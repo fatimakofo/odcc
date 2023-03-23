@@ -1,0 +1,350 @@
+@import url(media.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* nav styling starts here */
+nav{
+   padding: 30px; 
+    gap: 10px; 
+    height: 70px;
+    display: flex;
+    /* justify-content: center; */
+    /* background-color: red; */
+    align-items: center;
+}
+nav img{
+    width: 80px;
+    height: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: gray;
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    font-size: 18px;
+    
+}
+nav li{
+    text-decoration: none;
+    color: gray;
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    font-size: 18px;
+}
+nav a:hover{
+    color: black;
+}
+nav ul>li+li{
+    margin-left: 20px;
+}
+/* nav bar styling ends here */
+/* section styling starts here */
+section{
+    width: 100%;
+}
+div.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.main div.one{
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+div.main div.one img{
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease-in-out ;
+    object-fit: cover;
+    display: block;
+}
+div.main div.one:hover img{
+    transform: scale(1.55);
+    object-fit: cover;
+}
+div.text1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    display: none;
+    background-color: rgba(221, 160, 221, 0.487); 
+}
+div.text1 h3{
+    color: white;
+    font-size: 20px;
+    transform: translate(40%);
+    margin-top: 200px;
+}
+div.text1 p{
+    color: white;
+    font-size: 20px;
+    transform: translate(27%);
+    margin-top: 0;
+}
+div.one:hover .text1{
+    display: block;
+}
+div.text2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    display: none;
+    background-color: rgba(139, 137, 137, 0.487);
+}
+div.text2 h3{
+    color: white;
+    font-size: 20px;
+    transform: translate(37%);
+    margin-top: 200px;
+}
+div.text2 p{
+    color: white;
+    font-size: 20px;
+    transform: translate(35%);
+    margin-top: 0;
+}
+div.second:hover .text2{
+    display: block;
+}
+div.text6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    display: none;
+    background-color: rgba(248, 9, 5, 0.326);
+}
+div.text6 h3{
+    color: white;
+    font-size: 20px;
+    transform: translate(40%);
+    margin-top: 200px;
+}
+div.text6 p{
+    color: white;
+    font-size: 20px;
+    transform: translate(35%);
+    margin-top: 0;
+}
+div.six:hover .text6{
+    display: block;
+}
+div.text7{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    display: none;
+    background-color: rgb(70, 70, 181, 0.326);    
+}
+div.text7 h3{
+    color: white;
+    font-size: 20px;
+    transform: translate(40%);
+    margin-top: 200px;
+}
+div.text7 p{
+    color: white;
+    font-size: 20px;
+    transform: translate(28%);
+    margin-top: 0;
+}
+div.seven:hover .text7{
+    display: block;
+}
+/* styling for work starts here */
+div.work{
+    width: 100%;
+    padding: 50px 0;
+    background-color: gainsboro;
+    text-align: center;
+}
+div.work button{
+    width: 200px;
+    height: 60px;
+    font-size: 17px;
+    background-color: white;
+    border: 5px solid black;
+    transition: all 2.5s;
+}
+div.work button:hover{
+    background-color: black;
+    color: white;
+}
+/* styling for work ends here */
+/* div.client styling starts here */
+div.client{
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.client div.content1{
+    width: 60%;
+    /* height: 400px; */
+    margin-left: 80px;
+    
+}
+div.client div.content2{
+    width: 40%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 70px;
+}
+div.content1 h2,h5{
+    margin-top: 35px;
+}
+div.content1>p{
+    margin-top: 35px;
+}
+div.content2 div.two{
+    width: 18%;
+    height: 100px;
+}
+div.content2 div.two img{
+    width: 100%;
+    height: 77%;
+}
+/* div.client styling ends here */
+/* div.services styling starts here */
+div.services{
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+div.services div.brand{
+    width: 35%;
+    height: 500px;
+    padding: 20px;
+    background-color: #EEEEEE;
+}
+div.services div.web{
+    width: 35%;
+    height: 500px;
+    padding: 20px;
+    background-color: #E5D1FA;
+}
+div.services div.app{
+    width: 35%;
+    height: 500px;
+    padding: 20px;
+    background-color: #EEEEEE;
+}
+/* div.brand div.txt1{
+    width: 65%;
+    height: 250px;
+    transform: translate(28%, 60%);
+}
+div.brand div.group{
+   margin-top: 55px;
+}
+ div.fill{
+    width: 350px;
+    margin-top: 219px;
+    transform: translate(28%);
+} */
+/* div.services styling ends here */
+/* div.last styling starts here */
+div.footer{
+    width: 100%;
+    height: 550px;
+    display: flex;
+}
+div.footer div.week{
+    width: 33.6%;
+    height: 550px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 20px;
+    /* text-align: center; */
+}
+div.want{
+    width: 33.2%;
+    height: 550px;
+    padding: 20px;
+    background-color: rgb(34, 34, 34);
+}
+div.odc{
+    width: 33.2%;
+    height: 550px;
+    padding: 20px;
+    background-color: rgb(34, 34, 34);
+}
+/* div.big a{
+    color: white;
+    text-decoration-color: white;
+}
+div.big>p{
+    font-size: 13px;
+    line-height: 25px;
+}
+div.big form{
+    margin-top: 40px;
+}
+div.big form>input{
+    padding: 8px;
+}
+div.big form>button{
+    padding: 8px;
+    background-color: grey;
+    border: none;
+} */
+/* div.week div.big{
+    width: 60%;
+    height: 280px;
+    margin-top: 130px;
+    margin-left: 100px;
+}
+div.small{
+    width: 70%;
+    height: 300px;
+    margin-top: 130px;
+    margin-left: 100px;
+    color: white;
+} */
+div.week a{
+    color: white;
+}
+div.week form{
+    margin-top: 40px;
+    display: flex;
+}
+div.week form>input{
+    padding: 8px;
+}
+div.week form>button{
+    padding: 8px;
+    background-color: grey;
+    border: none;
+}
+.small{
+    color: white;
+}
+div.small ul{
+    margin-top: 30px;
+}
+div.small a, ul>li{
+    list-style: none;
+    line-height: 25px;
+    color: white;
+}
+div.odc .class{
+    margin-top: 25px;
+}
+/* div.last styling ends here */
+/* section ends here */

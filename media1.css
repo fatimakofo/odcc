@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+    nav {
+      padding: 50px 0;
+      justify-content: center;
+      flex-direction: column;
+    }
+    div.main div.one {
+      width: 100%;
+    }
+    div.client {
+      flex-direction: column;
+      height: auto;
+      width: 90%;
+      margin: 30px auto;
+    }
+    div.client div.content1 {
+      width: 100%;
+      margin-left: 0px;
+    }
+    div.client div.content2 {
+      width: 100%;
+    }
+    div.services,
+    div.footer {
+      height: auto;
+      flex-direction: column;
+    }
+    div.services div.brand,
+    div.services div.web,
+    div.services div.app,
+    div.footer div.week,
+    div.want,
+    div.odc {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

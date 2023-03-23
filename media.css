@@ -1,0 +1,37 @@
+/* media query */
+@media screen and (max-width: 600px){
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px, 0;
+    }
+    div.main div.one {
+       width: 100%;
+    }
+    div.client {
+        width: 100%;
+        flex-direction: column;
+        height: auto; 
+        margin: 30px, auto;
+    }
+    div.client div.content1{
+        width: 100%;
+        margin-left: 0;
+    }
+    div.client div.content2{
+        width: 100%;
+    }
+    div.services,div.footer{
+        flex-direction: column;
+        height: auto;
+    }
+     div.services div.brand,
+     div.services div.web,
+     div.services div.app,
+     div.footer div.week,div.want,
+     div.odc{
+        width: 100%;
+        height: auto;
+
+    }
+}
